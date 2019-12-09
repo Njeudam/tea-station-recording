@@ -13,7 +13,7 @@
     --mainDark: #3a3e3b;
     --mainWhite: #ffffff;
     --mainGrey: #e5e5e5;
-    --mainTransition: all 0.30s ease-in-out;
+    --mainTransition: all 0.3s ease-in-out;
     --letterSpacing: 0.5rem;
 }
 
@@ -38,6 +38,11 @@ a {
 }
 
 /* clearfix */
+.clearfix::after, .clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
+}
 
 /* nav bar */
 /* header */
@@ -94,13 +99,6 @@ a {
     animation: show 5s ease-in-out 1;
 }
 /* end of header */
-/* content divider */
-.content-divider{
-    height: 0.5rem;
-    background: linear-gradient(to left, var(--primaryColor), var(--secondaryColor));
-
-}
-/* end of content divider */
 /* animations */
 @keyframes show {
     0% {
@@ -141,5 +139,65 @@ a {
         transform: translateX(0px);
      }
 }
-
 /* end of animations */
+/* content divider */
+.content-divider{
+    height: 0.5rem;
+    background: linear-gradient(to left, var(--primaryColor), var(--secondaryColor));
+
+}
+/* end of content divider */
+/* skills */
+.skills {
+    background: var(--mainGrey);
+}
+.skill {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: var(--mainTransition);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: var(--mainTransition);
+    display: inline-block;
+}
+.skill-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1.5rem;
+    color: var(--primaryColor);
+    transition: var(--mainTransition);
+}
+.skill-text {
+    max-width: 13rem;
+    margin: 0 auto;
+}
+.skill:hover {
+    background: var(--primaryColor);
+}
+.skill:hover .skill-title {
+    color: var(--mainWhite);
+}
+
+.skill:hover .skill-icon {
+    transform: translateY(-5px);
+}
+
+@media screen and (min-width:576px) {
+    .skill {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .skill {
+        width: 25%;
+    }
+}
+
+/* end of skills */
