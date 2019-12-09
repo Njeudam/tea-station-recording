@@ -9,11 +9,11 @@
 :root {
     --slantedText: 'Grand Hotel', cursive;
     --primaryColor: #698f3f;
-    --secindaryColor: #fca311;
+    --secondaryColor: #fca311;
     --mainDark: #3a3e3b;
     --mainWhite: #ffffff;
     --mainGrey: #e5e5e5;
-    --mainTransition: all 0.3 ease-in-out;
+    --mainTransition: all 0.30s ease-in-out;
     --letterSpacing: 0.5rem;
 }
 
@@ -55,7 +55,6 @@ a {
     transform: translate(-50%, -50%);
     letter-spacing: var(--letterSpacing);
 }
-/* banner-subtitle */
 .banner-subtitle {
     font-size: 2rem;
     font-family: var(--slantedText);
@@ -91,7 +90,7 @@ a {
 }
 
 .banner-btn {
-    padding: 0.2rem 1.5rem;
+    padding: 1.2rem 1.5rem;
     /* animation */
 }
 
