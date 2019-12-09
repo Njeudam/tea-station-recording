@@ -43,9 +43,29 @@ a {
     clear: both;
     display: table;
 }
+/* common class for others sections */
+.section-center {
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    font-family: var(--slantedText);
+    letter-spacing: var(--letterSpacing);
+    text-transform: capitalize;
+    color: var(--primaryColor);
+}
+
+.section-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 
 /* nav bar */
-/* header */
+/*#region header */
 .header {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/main-bcg.jpeg') center/cover no-repeat fixed;
@@ -98,8 +118,8 @@ a {
     padding: 1.2rem 1.5rem;
     animation: show 5s ease-in-out 1;
 }
-/* end of header */
-/* animations */
+/*#endregion end of header */
+/*#region animations */
 @keyframes show {
     0% {
         transform: scale(2);
@@ -139,7 +159,7 @@ a {
         transform: translateX(0px);
      }
 }
-/* end of animations */
+/*#endregion end of animations */
 /* content divider */
 .content-divider{
     height: 0.5rem;
@@ -147,7 +167,7 @@ a {
 
 }
 /* end of content divider */
-/* skills */
+/* #region skills */
 .skills {
     background: var(--mainGrey);
 }
@@ -200,4 +220,38 @@ a {
     }
 }
 
-/* end of skills */
+/*#endregion end of skills */
+
+/* about */
+.about-picture {
+    width: 100%;
+    display: block;
+    transition: var(--mainTransition);
+}
+.about-img, .about-info {
+    padding: 2rem 0;
+}
+.about-picture-container {
+    background: var(--primaryColor);
+    border: 0.5rem solid var(--primaryColor);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.about-picture-container:hover .about-picture {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.about-text {
+    margin: 1rem 0;
+    max-width: 26rem;
+}
+@media screen and (min-width: 992px) {
+    .about-img, .about-info {
+        float: left;
+        width: 50%;
+        padding: 2rem;
+    }
+}
+/* end of about */
