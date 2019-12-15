@@ -98,8 +98,51 @@ a {
         transform: scale(1);
     }
 }
-
 /* nav bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: var(--mainGrey);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    transition: var(--mainTransition);
+    /* opacity: 0.95; */
+    transform: translateX(-100%);
+}
+.show-nav {
+    transform: translateX(0);
+}
+.nav-close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-items {
+    list-style-type: none;
+}
+.nav-link {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    transition: var(--mainTransition);
+}
+
+.nav-link:hover {
+    color: var(--mainDark);
+    padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        width: 30vh;
+        max-width: 20rem;
+    }
+}
+
 /*#region header */
 .header {
     min-height: 100vh;
