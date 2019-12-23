@@ -441,8 +441,55 @@ a {
 /* #endregion end of products*/
 
 /* #region services */
+.services {
+    background: var(--mainGrey);
+}
+.service-img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
 .services-title {
-    
+    padding-top: 4rem;
+}
+.service-info {
+    background: var(--primaryColor);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: var(--letterSpacing);
+    color: var(--mainWhite);
+    text-transform: capitalize;
+    padding: 2.5rem 0 1rem 0;
+}
+.service-btn {
+    display: inline-block;
+    background: var(--mainWhite);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.8rem 2rem;
+    color: var(--primaryColor);
+    font-weight: bold;
+    border: 0.2rem solid var(--mainWhite);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: var(--mainTransition);
+}
+.service-btn:hover {
+    background: transparent;
+    color: var(--mainWhite);
+
+}
+.service-card {
+    border: 0.3rem solid var(--primaryColor);
+    padding: 0.2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    /* box shadow */
+
 }
 /* #region end of services */
 
