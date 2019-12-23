@@ -489,7 +489,20 @@ a {
     border-radius: 1rem;
     margin: 2rem 0;
     /* box shadow */
+}
+@media screen and (min-width: 768px) {
+     .service-card {
+         float: left;
+         width: 45%;
+         margin-right: 5%;
+     }
+}
 
+@media screen and (min-width: 992px) {
+    .service-card {
+        width: 30%;
+        margin-right: 3.333%;
+    }
 }
 /* #region end of services */
 
